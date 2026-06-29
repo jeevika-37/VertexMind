@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <script src="index.js"></script>
+    <title>RockPaperSissor</title>
+</head>
+<body>
+    <div class="title">
+        <img src="rock_paper_scissor.jpg" alt="">
+    </div>
+    <div class="Game_container">
+        <div class="computer">
+            <h1>COMPUTER</h1>
+            <button><img src="Rock.png" alt=""></button>
+            <button><img src="Paper.png" alt=""></button>
+            <button><img src="Sissor.png" alt=""></button>
+        </div>
+        <div class="user">
+            <h1>YOU </h1>
+            <button onclick="userData(1)"><img src="Rock.png" alt=""></button>
+            <button onclick="userData(2)"><img src="Paper.png" alt=""></button>
+            <button onclick="userData(3)"><img src="Sissor.png" alt=""></button>
+        </div>
+        <div id="ans" class="ans">
+            <h2>MATCH:<span id="matchCount"></span></h2>
+            <h2>WIN:<span id="winCount"></span></h2>
+            <h2>LOOSE:<span id="looseCount"></span></h2>
+            <h2>TIE:<span id="tieCount"></span></h2>
+            <h1 id="answer"></h1>
+            <div class="comAns" id="comAns">
+                <img src="Rock.png" id="c1" alt="">
+                <img src="Paper.png" id="c2" alt="">
+                <img src="Sissor.png" id="c3" alt="">
+            </div>
+            <div class="userAns" id="userAns">
+                <img src="Rock.png" id="u1" alt="">
+                <img src="Paper.png" id="u2" alt="">
+                <img src="Sissor.png" id="u3" alt="">
+            </div>
+        </div>
+        <div class="reset">
+            <button onclick="reset()">RESET</button>
+        </div>
+
+
+    </div>
+    <a class="me" href="https://dhesitheking.github.io/portfolio/">DEVELOPER INFO</a>
+</body>
+</html>
