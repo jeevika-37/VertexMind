@@ -127,7 +127,7 @@ Installed:
 ## Step 2: Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/RPS-Game.git
+git clone [https://github.com//RPS-Game.git](https://github.com/DhesiTheKing/RockPaperSissor.git)
 ```
 
 ---
@@ -161,13 +161,13 @@ A Dockerfile was created to package the application into a Docker image.
 Build the image:
 
 ```bash
-docker build -t <docker-username>/rps-game:latest .
+docker build -t jeevika37/rps-game:latest .
 ```
 
 Run locally:
 
 ```bash
-docker run -d -p 8080:80 <docker-username>/rps-game:latest
+docker run -d -p 8080:80 jeevika37/rps-game:latest
 ```
 
 ---
@@ -183,7 +183,7 @@ docker login
 Push image:
 
 ```bash
-docker push <docker-username>/rps-game:latest
+docker push jeevika37/rps-game:latest
 ```
 
 The Docker Registry stores the latest application image, allowing Kubernetes to pull and deploy it.
@@ -233,7 +233,7 @@ kubectl get svc
 Application URL:
 
 ```
-http://<EC2-Public-IP>:<NodePort>
+http://13.17.208.19:8000
 ```
 
 ---
@@ -490,40 +490,8 @@ kubectl describe deployment rps-game
 View logs
 
 ```bash
-kubectl logs <pod-name>
+kubectl logs rps-p1
 ```
-
----
-
-# 📸 Suggested Screenshots
-
-Include screenshots of:
-
-- GitHub Repository
-- Jenkins Dashboard
-- Jenkins Pipeline Success
-- Docker Images
-- Docker Registry Repository
-- Kind Cluster
-- Running Pods
-- Kubernetes Services
-- Browser Output of RPS Game
-
-Example:
-
-```
-screenshots/
-│
-├── github.png
-├── jenkins-dashboard.png
-├── pipeline-success.png
-├── docker-images.png
-├── docker-registry.png
-├── kubectl-pods.png
-├── kubectl-services.png
-└── application.png
-```
-
 ---
 
 # 🚀 Project Outcome
@@ -558,22 +526,9 @@ Through this project, I gained hands-on experience with:
 
 ---
 
-# 🔮 Future Enhancements
-
-- Integrate SonarQube for Code Quality Analysis.
-- Add Trivy for Container Vulnerability Scanning.
-- Implement Automated Unit and Integration Testing.
-- Use Helm Charts for Kubernetes Deployments.
-- Configure Ingress Controller with HTTPS.
-- Deploy the application on Amazon EKS for production.
-- Implement Monitoring using Prometheus and Grafana.
-- Add Logging using the ELK Stack.
-
----
-
 # 👨‍💻 Author
 
-**Your Name**
+**Jeevika**
 
 DevOps Engineer
 
@@ -591,8 +546,6 @@ DevOps Engineer
 - DevOps Automation
 
 ---
-
-# ⭐ Conclusion
 
 This project demonstrates a complete DevOps workflow by integrating GitHub, Jenkins, Docker, Docker Registry, Kubernetes, and AWS EC2 into a fully automated CI/CD pipeline. Every code push initiates an automated sequence that builds, packages, and deploys the application with minimal manual intervention. The project highlights best practices in continuous integration, continuous deployment, containerization, and Kubernetes orchestration, providing a solid foundation for deploying cloud-native applications.
 ````
